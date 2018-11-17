@@ -1,15 +1,14 @@
 <?php
 /**
-Plugin Name: BP Codeable Users Test
-Description:  Adds Admin page with ajax enabled list table of all the users and their roles. (<strong>This is just a job-application test</strong>)
-Version: 1.0
-Author: Viktor Panteleev
-Author URI: https://www.vpanteleev.com
-License: GPLv2
-Text Domain: bpcut
+ * Plugin Name: BP Codeable Users Test
+ * Description:  Adds Admin page with ajax enabled list table of all the users and their roles. (<strong>This is just a job-application test</strong>)
+ * Version: 1.0
+ * Author: Viktor Panteleev
+ * Author URI: https://www.vpanteleev.com
+ * License: GPLv2
+ * Text Domain: bpcut
  */
-error_reporting(E_ALL);
-ini_set('display_errors',1);
+ 
 define('BPCUT_PLUGIN_DIR', dirname(__FILE__));
 define('BPCUT_PLUGIN_DIR_FULL', plugin_dir_path(__FILE__));
 define('BPCUT_VERSION', '1.0');
