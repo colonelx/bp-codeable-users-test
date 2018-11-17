@@ -1,0 +1,36 @@
+/**
+This is the base style file for the bp-codeable-users-test plugin.
+ */
+.wrap h2 {
+    margin-bottom: 2em; 
+}
+.bp-container {
+    max-width: 800px;
+    margin: 2em auto;
+    background: #ffffff;
+    display: block;
+    clear: both;
+    padding: 2em;
+}
+
+.bp-box {
+    overflow: auto;
+    margin: 2em 0;
+}
+
+.bp-box::after {
+    clear: both;
+}
+
+.head {
+    font-size: 1.5em;
+}
+
+.bp-box .dataTables_wrapper input,select {
+    width: auto;
+    height: 2em;
+}
+
+.bp-box .info {
+    margin: 1em 0;
+}
