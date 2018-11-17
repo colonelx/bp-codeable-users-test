@@ -5,7 +5,7 @@ Description:  Adds Admin page with ajax enabled list table of all the users and 
 Version: 1.0
 Author: Viktor Panteleev
 Author URI: https://www.vpanteleev.com
-License: GPLv2 or later
+License: GPLv2
 Text Domain: bpcut
  */
 error_reporting(E_ALL);
