@@ -16,14 +16,18 @@ Create a plugin that creates a custom HTML table in an admin page where we have 
 ### Prerequisites
 
 1). Wordpress >4.8.x (Basically you should never be using outdated wp-core versions, as this might cause a security risk.)
+
 2). `Import users from CSV with meta` Plugin - Used for importing dummy users.
 
 
 ## Deployment
 
 1). Download as zip.
+
 2). Unzip in `wp-content/plugins` directory.
+
 3). Rename directory to `bp-codeable-users-test`.
+
 4). Go to your WP Administration area (or use wp-cli) and enable the `BP Codeable Users Test` plugin.
 
 You may find the users example file I used for testing in [examples/codeable-users-example.csv](examples/codeable-users-example.csv)
