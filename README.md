@@ -68,3 +68,8 @@ Only the columns `Name` and `Username` are currently being used for ordering the
 
 This project is licensed under the [GNU GPLv2 License](LICENSE)
 
+
+## Usages
+
+1). [jQuery Datatables library](https://datatables.net/)
+2). [Import users from CSV with meta](https://wordpress.org/plugins/import-users-from-csv-with-meta/)
