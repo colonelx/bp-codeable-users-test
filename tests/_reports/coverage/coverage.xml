@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1542578927">
-  <project timestamp="1542578927">
+<coverage generated="1542580443">
+  <project timestamp="1542580443">
     <package name="BPCUT\Admin">
       <file name="/srv/http/bp/codeable/wp-content/plugins/bp-codeable-users-test/src/Admin/AdminPage.php">
         <class name="BPCUT\Admin\AdminPage" namespace="BPCUT\Admin" fullPackage="BPCUT" package="BPCUT">
