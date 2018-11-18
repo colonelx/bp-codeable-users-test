@@ -7,6 +7,6 @@ add_action( 'plugins_loaded', 'bpcut_init' );
  */
 function bpcut_init()
 {
-    new BPCUT\Plugin();
-    
+    $plugin = new BPCUT\Plugin();
+    $plugin->run();
 }

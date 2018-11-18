@@ -85,6 +85,7 @@ class AdminPage
             ['jquery'],
             '1.10.18'
         );
+        
     }
 
     /**
