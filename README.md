@@ -1,5 +1,7 @@
 # Codeable Users Test
 
+![Coverage: 91%](tests/_reports/coverage/coverage.svg)
+
 This is a test project to be viewed by codeable.io.
 
 

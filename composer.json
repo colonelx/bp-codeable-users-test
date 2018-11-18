@@ -9,6 +9,7 @@
         "10up/wp_mock": "0.3.0",
         "phpunit/phpunit": "~6.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
-        "phpcompatibility/phpcompatibility-wp": "^2.0"
+        "phpcompatibility/phpcompatibility-wp": "^2.0",
+        "jaschilz/php-coverage-badger": "^2.0"
     }
 }
