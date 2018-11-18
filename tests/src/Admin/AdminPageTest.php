@@ -122,7 +122,8 @@ class AdminPageTest extends \WP_Mock\Tools\TestCase
                     \WP_Mock\Functions::type('string'),
                     'ajax_get_users_url',
                     \WP_Mock\Functions::type('string'),
-                ]
+                ],
+                'times' => 1
             ]
         );
 
@@ -133,7 +134,8 @@ class AdminPageTest extends \WP_Mock\Tools\TestCase
                     \WP_Mock\Functions::type('string'),
                     'wp_defined_roles',
                     \WP_Mock\Functions::type('array'),
-                ]
+                ],
+                'times' => 1
             ]
         );
 

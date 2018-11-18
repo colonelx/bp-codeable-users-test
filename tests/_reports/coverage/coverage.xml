@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1542582352">
-  <project timestamp="1542582352">
+<coverage generated="1542583870">
+  <project timestamp="1542583870">
     <package name="BPCUT\Admin">
       <file name="/srv/http/bp/codeable/wp-content/plugins/bp-codeable-users-test/src/Admin/AdminPage.php">
         <class name="BPCUT\Admin\AdminPage" namespace="BPCUT\Admin" fullPackage="BPCUT" package="BPCUT">
@@ -81,12 +81,12 @@
         <line num="73" type="stmt" count="2"/>
         <line num="74" type="stmt" count="2"/>
         <line num="76" type="stmt" count="2"/>
-        <line num="78" type="method" name="render_result" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="80" type="stmt" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="83" type="stmt" count="0"/>
+        <line num="82" type="method" name="render_result" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="84" type="stmt" count="0"/>
-        <metrics loc="84" ncloc="71" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="33" elements="39" coveredelements="34"/>
+        <line num="85" type="stmt" count="0"/>
+        <line num="87" type="stmt" count="0"/>
+        <line num="88" type="stmt" count="0"/>
+        <metrics loc="88" ncloc="71" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="33" elements="39" coveredelements="34"/>
       </file>
     </package>
     <package name="BPCUT\Library">
@@ -105,15 +105,15 @@
         <class name="BPCUT\Plugin" namespace="BPCUT" fullPackage="BPCUT" package="BPCUT">
           <metrics complexity="7" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="17" coveredelements="17"/>
         </class>
-        <line num="18" type="method" name="run" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="20" type="stmt" count="2"/>
-        <line num="21" type="stmt" count="2"/>
-        <line num="26" type="method" name="register_hooks" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="28" type="stmt" count="1"/>
+        <line num="18" type="method" name="run" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="20" type="stmt" count="3"/>
+        <line num="21" type="stmt" count="3"/>
+        <line num="26" type="method" name="register_hooks" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="28" type="stmt" count="2"/>
         <line num="29" type="stmt" count="1"/>
         <line num="30" type="stmt" count="1"/>
         <line num="32" type="stmt" count="1"/>
-        <line num="34" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="2"/>
         <line num="40" type="method" name="get_admin_page_instance" visibility="protected" complexity="2" crap="2" count="1"/>
         <line num="42" type="stmt" count="1"/>
         <line num="43" type="stmt" count="1"/>
@@ -125,6 +125,6 @@
         <metrics loc="58" ncloc="41" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="17" coveredelements="17"/>
       </file>
     </package>
-    <metrics files="4" loc="258" ncloc="192" classes="4" methods="10" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="84" coveredstatements="78" elements="94" coveredelements="86"/>
+    <metrics files="4" loc="262" ncloc="192" classes="4" methods="10" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="84" coveredstatements="78" elements="94" coveredelements="86"/>
   </project>
 </coverage>

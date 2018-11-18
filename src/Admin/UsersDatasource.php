@@ -75,6 +75,10 @@ class UsersDatasource {
         ]);
     }
 
+    /**
+     * Render the result
+     * @args array $object
+     */
     public function render_result($object)
     {
         header("Content-Type: application/json");

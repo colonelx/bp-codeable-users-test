@@ -41,16 +41,16 @@ class PluginTest extends \WP_Mock\Tools\TestCase
         $stub->run();
     }
 
-    // public function testRegisterHooksNotAdmin()
-    // {
-        
-    //     \WP_Mock::userFunction('is_admin',['times' => 1, 'return' => false]);
-    //     // \WP_Mock::expectActionNotAdded('admin_menu', [$adminPageInst,'hook_menu']);
-    //     // \WP_Mock::expectActionNotAdded('adadmin_enqueue_scriptsmin_menu', [$adminPageInst,'hook_enqueeue_static_files']);
-    //     // \WP_Mock::expectActionNotAdded('wp_ajax_bpcut_get_users', [$usersDatasourceInst,'getUsers']);
+    public function testRegisterHooksNotAdmin()
+    {
+        \WP_Mock::userFunction('is_admin',['times' => 1, 'return' => false]);
+        \WP_Mock::expectActionNotAdded('admin_menu', [$this->adminPageMock,'hook_menu']);
+        \WP_Mock::expectActionNotAdded('adadmin_enqueue_scriptsmin_menu', [$this->adminPageMock,'hook_enqueeue_static_files']);
+        \WP_Mock::expectActionNotAdded('wp_ajax_bpcut_get_users', [$this->usersDatasourceMock,'getUsers']);
 
-    //     $plugin = new BPCUT\Plugin();   
-    // }
+        $this->stub->run();
+        $this->assertConditionsMet();   
+    }
 
     public function testRegisterHooksAdmin()
     {   
