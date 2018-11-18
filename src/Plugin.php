@@ -12,11 +12,10 @@ use BPCUT\Admin\UsersDatasource;
  */
 class Plugin
 {
+    private $adminPageInstance;
+    private $usersDataSourceInstance;
 
-    /**
-     * Plugin constructor.
-     */
-    public function __construct() 
+    public function run()
     {
         $this->register_hooks();
     }
@@ -24,16 +23,37 @@ class Plugin
     /**
      * Registers the plugin hooks.
      */
-    private function register_hooks()
+    public function register_hooks()
     {
-
         if(is_admin()) {
-            $adminPage = new AdminPage();
-            add_action('admin_menu', [$adminPage, 'hook_menu']);
-            add_action( 'admin_enqueue_scripts', [$adminPage, 'hook_enqueue_static_files'] );
+            add_action('admin_menu', [$this->get_admin_page_instance(), 'hook_menu']);
+            add_action('admin_enqueue_scripts', [$this->get_admin_page_instance(), 'hook_enqueue_static_files']);
 
-            $usersDatasource = new UsersDatasource();
-            add_action('wp_ajax_bpcut_get_users', [$usersDatasource, 'getUsers']);
+            add_action('wp_ajax_bpcut_get_users', [$this->get_users_datasource_instance(), 'get_users']);
         }
+    }
+
+    /**
+     * Fetches an AdminPage instance
+     * @return \BPCUT\AdminPage
+     */
+    protected function get_admin_page_instance()
+    {
+        if(!isset($this->adminPageInstance)) {
+            $this->adminPageInstance = new AdminPage();
+        }
+        return $this->adminPageInstance;
+    }
+
+    /**
+     * Fetches an UsersDatasource instance
+     * @return \BPCUT\UsersDatasource
+     */
+    protected function get_users_datasource_instance()
+    {
+        if(!isset($this->usersDataSourceInstance)) {
+            $this->usersDataSourceInstance = new UsersDatasource();
+        }
+        return $this->usersDataSourceInstance;
     }
 }

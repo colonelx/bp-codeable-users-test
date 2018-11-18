@@ -16,9 +16,9 @@ class UsersDatasource {
      * A Json encoded object user for datatable datasource
      * Used via AJAX.
      */
-    public function getUsers()
+    public function get_users()
     {
-        header("Content-Type: application/json");
+        // var_dump('die'); die();
         $draw = $_POST['draw'];
         $columns = $_POST['columns'];
 
@@ -67,14 +67,18 @@ class UsersDatasource {
             ];
         }   
 
-        $mockUp = [
+        $this->render_result([
             'draw' => $draw,
             'recordsTotal' => $user_query->get_total(),
             'recordsFiltered' => $user_query->get_total(),
             'data' => $data
-        ];
+        ]);
+    }
 
-        echo json_encode($mockUp);
+    public function render_result($object)
+    {
+        header("Content-Type: application/json");
+        echo json_encode($object);
 
         wp_die();
     }

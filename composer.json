@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+        "BPCUT\\":"src/"
+        }
+    },
+      
+    "require-dev": {
+        "10up/wp_mock": "0.3.0",
+        "phpunit/phpunit": "~6.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+        "phpcompatibility/phpcompatibility-wp": "^2.0"
+    }
+}
