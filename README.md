@@ -42,6 +42,7 @@ The plugin uses [jQuery Datatables library](https://datatables.net/), configured
 ### Plugin admin page
 
 Once the plugin is enabled, you should see the Admin menu Page called `Codeable Users`.
+
 ![WP Admin menu](examples/docs/wp_menu.png)
 
 
@@ -49,6 +50,7 @@ Once the plugin is enabled, you should see the Admin menu Page called `Codeable 
 
 Currently filtering is enabled only on the `role` column. Just click on the Dropdown that says `-Role-` and select the required role. Empty roles currently are: `Editor` and `Contributor`.
 _Note that one user might have multiple roles._
+
 ![Plugin DropDown filter](examples/docs/filter_role.png)
 
 ### Pagination
@@ -59,6 +61,7 @@ You may select how many items to show per single page on the top left corner of 
 ### Ordering columns
 
 Only the columns `Name` and `Username` are currently being used for ordering the data. By clicking on the name you choose to order that column in either ascending or descending order.
+
 ![Plugin Order Columns](examples/docs/admin_page.png)
 
 
@@ -69,7 +72,7 @@ $ composer install
 ```
 
 ```
-./vendor/bin/phpunit
+$ ./vendor/bin/phpunit
 ```
 
 
