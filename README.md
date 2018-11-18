@@ -63,10 +63,14 @@ Only the columns `Name` and `Username` are currently being used for ordering the
 
 
 ## PHPUnit tests
+ 
+```
+$ composer install
+```
 
-1). `composer install`
-
-2). `./vendor/bin/phpunit`
+```
+./vendor/bin/phpunit
+```
 
 
 ## Authors
