@@ -62,7 +62,15 @@ Only the columns `Name` and `Username` are currently being used for ordering the
 ![Plugin Order Columns](examples/docs/admin_page.png)
 
 
+## PHPUnit tests
+
+1). `composer install`
+
+2). `./vendor/bin/phpunit`
+
+
 ## Authors
+
 * **Viktor Panteleev** - [Website](https://www.vpanteleev.com)
 
 
