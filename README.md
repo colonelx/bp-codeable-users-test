@@ -65,6 +65,13 @@ Only the columns `Name` and `Username` are currently being used for ordering the
 ![Plugin Order Columns](examples/docs/admin_page.png)
 
 
+## Demo environment
+
+I've set a demo environment here: *https://codeable.benchparty.com/wp-login.php*
+
+*The credentials were sent by email*
+
+
 ## PHPUnit tests
  
 ```
