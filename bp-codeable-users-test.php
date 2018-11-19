@@ -8,7 +8,8 @@
  * License: GPLv2
  * Text Domain: bpcut
  */
- 
+ error_reporting(E_ALL);
+ ini_set('display_errors', 1);
 define('BPCUT_PLUGIN_DIR', dirname(__FILE__));
 define('BPCUT_PLUGIN_DIR_FULL', plugin_dir_path(__FILE__));
 define('BPCUT_VERSION', '1.0');
